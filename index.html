@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mountain Montaign</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- responsive meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS DE Boostrap-->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.min.css" />
+    <!--google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Notre fichier css custom-->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <!-- Humburger menu-->
+    <link href="./hamburgers/dist/hamburgers.css" rel="stylesheet">
+</head>
+<body>
+     <!-- barre de navigation-->
+     <div class ="navigationContainer">
+        <nav  class=" menu navbar navbar-text navbar-inverse" role="navigation">
+            <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="  navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        </div>
+
+    <!-- Header-->
+    <header class="container-fluid"  id="home">
+        <div class="row" style="position: relative">
+            <!-- Le logo-->
+            <div class="col-lg-3  text-left">
+                    <img src="./images/your_logo.png"
+                    class="logo responsive" alt="your logo mountain challenge" >
+                </div>
+          <div class="text-right humburgerContainer">
+            <!--Le bouton Hamburger -->
+            <button id="boutton_menu" onclick="clickedHamburgerOnClick()" class="hamburger hamburger--collapse is-active" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <!-- fin du bouton hamburger --> 
+          </div>
+
+           
+        </div>
+        <div class="row">
+            <div class=" col-lg-5 col-lg-offset-5 jumbotron justify-content-center">
+                <h2 class="display-4">In the hall of the 
+                </h2>
+                <h1><strong>Mountaing King! </strong></h1>
+                <p class="font">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <p class=" font">
+                    <a class="font btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    <a class="btn btn-danger btn-lg font" href="#" role="button">Download</a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- la section-->
+    <section class="container-fluid">
+            <div class="row">
+                <!-- 1er logo-->
+                <div class="col-lg-4 col-12 sectionLogo">
+                    <i class="fa fa-edit fa-5x" style="color:grey"></i>
+                    <h3>consectetur Risus</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis facilis libero sed repudiandae quo similique impedit fugit! Molestiae quis officia enim ipsum dignissimos sequi soluta quod voluptate error harum?
+                    </p>
+                </div>
+                <!-- 2eme logo-->
+                <div class="col-lg-4 col-12 sectionLogo">
+                    <i class="fa fa-camera-retro fa-5x" style="color:grey"></i>
+                    <h3>consectetur Risus</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis facilis libero sed repudiandae quo similique impedit fugit! Molestiae quis officia enim ipsum dignissimos sequi soluta quod voluptate error harum?
+                    </p>
+                </div>
+                <!-- 3eme logo-->
+                <div class="col-lg-4 col-12 sectionLogo">
+                    <i class="fa fa-bookmark fa-5x" style="color:grey;"></i>
+                    <h3>consectetur Risus</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis facilis libero sed repudiandae quo similique impedit fugit! Molestiae quis officia enim ipsum dignissimos sequi soluta quod voluptate error harum?
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <!-- 2ème section (nuage)-->
+    <section class=" container-fluid nuage">
+        <img src="images/bg_nuage.jpg" class=" img-fluid imageSection bg-nuage" alt="Responsive image">
+        <div class="container" style="width :100vw; ">
+            <div class="row">
+                <div class="containerBlue  offset-lg-10 col-lg-2">
+                    <div class="description">
+                        <h4 class="texteWhite">Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+                        <p class="texteWhite"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis 
+                        facilis libero sed repudiandae quo similique impedit fugit! Molestiae
+                        quis officia enim ipsum dignissimos.
+                        </p>
+                        <div class="container ContainerCadre">
+                            <div class="row">
+                                <div class="cadre">
+                                    <h3 class="texteWhite">Ultricie</h3>
+                                    <p class="texteWhite">23.578</p>
+                                </div>
+                                <div class="cadre">
+                                    <h3 class=" texteWhite">Fermentum</h3>
+                                    <p class="texteWhite">12.702</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- javascript de Boostrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- script calcul resize de la fenetre du navigateur pour le texte  -->
+    <script>
+        $(window).resize(function() {
+            $('h1, h2').css('z-index', 'auto'); //auto reflow
+            $('.font').css('z-index', 'auto');
+        });
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- animation menu hamburger -->
+      <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function() {
+          // Toggle class "is-active"
+          hamburger.classList.toggle("is-active");
+          // Do something else, like open/close menu
+        });
+      </script>
+    
+    <!-- apparition menu hamburger -->
+      <script type="text/javascript">
+
+        function clickedHamburgerOnClick() {
+
+        // mes variables
+        var navigationContainerEls = document.querySelector(".navigationContainer");
+        var buttonMenuEls = document.getElementById("boutton_menu");
+        var menuEls = document.querySelector(".menu"); 
+
+        function cacher( )
+        {
+            if (menuEls.hidden== false ){
+                menuEls.hidden= true;
+                navigationContainerEls.style.backgroundColor = "transparent";
+                return;
+
+            }
+            if (menuEls.hidden== true )
+            {
+                menuEls.hidden=false;
+                navigationContainerEls.style.backgroundColor = "#222222";
+                return;
+            }
+        } 
+        cacher(menuEls);
+	}
+      </script>
+
+    <script>
+      // We listen to the resize event
+    window.addEventListener('resize', () => {
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+</script>
+     
+
+</body>
+</html>
