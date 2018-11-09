@@ -130,22 +130,19 @@ p{
 .containerBlue{
     background-color: rgba(169, 234, 254,0.5);
     position: absolute;
-    border : 5px solid red;
     height: 60vh;
-    width : 40vw;
+    width : 39vw;
     z-index: 299;
     text-align: center;
 }
 
 .ContainerCadre{
-    border : 5px solid red;
     z-index: 199;
     margin-top: 5%;
 
 }
 
 .cadre{
-    border : 5px solid red;
     margin-top: 10px;
   
 }
@@ -158,35 +155,25 @@ p{
 .description {
     margin-top: 5% ;
 }
-
-
-/* ecran portable  small et Extra small */
-@media(max-width:767px){
-    .responsive {
-        width: 80%;
-        min-width: 200px;
-        height: auto;
-    }
-    .navigationContainer{
-        width: 30vh;
-        height: 100vh;
-       
-    }
-    .containerBlue{
-        height: 60vh;
-        width : 100vw;
-        z-index: 299;
-        text-align: center;
-    
-    }
-    .cadre{
-        border : 5px solid red;
-        
-    }
-    .description{
-        margin-top: 20%;
-    }
+/*Marge entre la section nuage en absolue et la section article velo */
+#bas_corps
+{
+    margin-bottom: 67vh;
 }
+
+/* troisième section (avec le vélo) */
+
+.descriptionBike{
+    margin-top: 5%;
+}
+#pictureBike{
+    width: 100vh;
+    
+    /*un max-width de 100% forcera les images à être soit plus petites que leur conteneur soit de la même largeur. */
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 /* ecran medium tablette */
@@ -207,12 +194,10 @@ p{
         position: absolute;
        
         height: 60vh;
-        width : 85vw;
+        width : 46vw;
         z-index: 299;
         text-align: center;
     }
-
-
     .ContainerCadre{
         width: 36vh;
     }
@@ -233,18 +218,83 @@ p{
     }
     .containerBlue{
         height: 60vh;
+        width : 46vw;
+        z-index: 299;
+        text-align: center;
+    
+    }
+    .description{
+        margin-top: 20%;
+    }
+}
+
+/* section galerie photo */
+.
+
+/* ecran portable  small et Extra small */
+@media(max-width:767px){
+    /** section header **/
+    /* pour les logo responsive */
+    .responsive {
+        width: 80%;
+        min-width: 200px;
+        height: auto;
+    }
+    .navigationContainer{
+        width: 30vh;
+        height: 100vh;
+       
+    }
+
+    /*section nuage */
+    .containerBlue{
+        height: 60vh;
         width : 100vw;
         z-index: 299;
         text-align: center;
     
     }
-    .cadre{
-        border : 5px solid red;
+    .description{
+        margin-top: 20%;
+    }
+
+    /*marge entre section nuage et article velo  */
+    #bas_corps  
+    {
+        margin-bottom: 60vh;
+    }
+}
+/* IPad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+
+    .responsive {
+        width: 80%;
+        min-width: 200px;
+        height: auto;
+    }
+    .navigationContainer{
+        width: 30vh;
+        height: 100vh;
         
+    }
+    .containerBlue{
+        height: 60vh;
+        width : 100vw;
+        z-index: 299;
+        text-align: center;
+    
     }
     .description{
         margin-top: 20%;
     }
+
+    #bas_corps  
+    {
+        margin-bottom: 60vh;
+    }
+    
 }
 
 /* ecran large lg laptop */
@@ -261,7 +311,7 @@ p{
     font-size: 1.3em;
    }
    .containerBlue {
-    margin-left: 11% !important;
+    margin-left: 45% !important;
 }
     
 }
@@ -281,8 +331,29 @@ p{
     
     }
     .containerBlue {
-        margin-left: 11% !important;
+        width: 30vw;
+        margin-left: 30% !important;
+    }  
+
+    #bas_corps  
+    {
+        margin-bottom: 60vh;
     }
-   
-    
+
+    #pictureBike{
+        width: 100vh;
+        
+        /*un max-width de 100% forcera les images à être soit plus petites que leur conteneur soit de la même largeur. */
+        max-width: 100%;
+        height: auto;
+    }
+
+    #article .container{
+        width: 90%;
+        margin: 10px;
+    }
+}
+
+.border{
+    border : 5px solid red;
 }
